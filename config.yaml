@@ -1,0 +1,43 @@
+data:
+  csv_path: "./data/bank_data.csv"
+  categorical_features:
+    - "Gender"
+    - "Education_Level"
+    - "Marital_Status"
+    - "Income_Category"
+    - "Card_Category"
+  numeric_features:
+    - "Customer_Age"
+    - "Dependent_count"
+    - "Months_on_book"
+    - "Total_Relationship_Count"
+    - "Months_Inactive_12_mon"
+    - "Contacts_Count_12_mon"
+    - "Credit_Limit"
+    - "Total_Revolving_Bal"
+    - "Avg_Open_To_Buy"
+    - "Total_Amt_Chng_Q4_Q1"
+    - "Total_Trans_Amt"
+    - "Total_Trans_Ct"
+    - "Total_Ct_Chng_Q4_Q1"
+    - "Avg_Utilization_Ratio"
+
+eda:
+  save_path: "./images/eda/"
+    
+results:
+  save_path: "./images/results/"
+  
+models:
+  save_path: "./models/"
+  names:
+    - "LogisticRegression"
+    - "RandomForestClassifier"
+
+parameters:
+  test_size: 0.3
+  random_state: 42
+  n_estimators: 180
+  max_depth: 13
+  criterion: 'entropy'
+  max_features: 'auto'
